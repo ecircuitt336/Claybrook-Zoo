@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Remove all margins and borders*/
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside";
+
+    background-color: #014e2e;
+}
+
+/* Header */
+header {
+    /* Grid Settings */
+    grid-area: header;
+    justify-content: space-around;
+    padding: 1em;
+
+    /* Text Settings */
+    text-align: center;
+    font-size: 2em;
+    font-family: "Lato", serif;
+    color: #c1d32f;
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+
+    background-color: #013006;
+}
+
+main {
+    /* Grid Settings */
+    grid-area: main;
+    /*justify-content: space-around;*/
+
+    /* Text Settings */
+    text-align: center;
+    font-size: 2em;
+}
+
+main img {
+    border-radius: .05em;
+    height: 10.3em;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #c1d32f;
+    grid-area: nav;
+}
+
+/* Access the unordered list and put it all on one line */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    /* Shadow */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Access the anchors in the list items in the unordered list in the navigation bar */
+nav ul li a {
+    /* Change colour of anchors in the navigation bar */
+    font-size: 1.25em;
+}
+
+aside {
+    background-color: #c1d32f;
+}
+
+aside p {
+    padding: .25em;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Lato", serif;
+    color: #013006;
+}
